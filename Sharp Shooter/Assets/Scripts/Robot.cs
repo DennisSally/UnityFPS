@@ -2,6 +2,7 @@ using StarterAssets;
 using UnityEngine;
 using UnityEngine.AI;
 
+[SelectionBase]
 public class Robot : MonoBehaviour
 {
     FirstPersonController player;
