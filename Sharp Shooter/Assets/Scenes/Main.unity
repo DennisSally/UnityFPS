@@ -578,6 +578,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 453181963}
+  - component: {fileID: 453181964}
   m_Layer: 6
   m_Name: Pistol
   m_TagString: Untagged
@@ -601,6 +602,18 @@ Transform:
   - {fileID: 1758035974}
   m_Father: {fileID: 1482089015}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &453181964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453181962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8083f884627a0469f6d7876c7bca52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &602319618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1288,6 +1301,7 @@ GameObject:
   - component: {fileID: 1217615859}
   - component: {fileID: 1217615858}
   - component: {fileID: 1217615857}
+  - component: {fileID: 1217615860}
   m_Layer: 7
   m_Name: Robot
   m_TagString: Untagged
@@ -1321,12 +1335,12 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0
+  m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!4 &1217615859
@@ -1338,13 +1352,36 @@ Transform:
   m_GameObject: {fileID: 1217615856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -14.57, y: 0.62, z: 17.69}
+  m_LocalPosition: {x: -14.57, y: 1.071, z: 17.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2024982822}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!136 &1217615860
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217615856}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1264552481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,7 +2075,7 @@ Transform:
   m_GameObject: {fileID: 2024982821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
